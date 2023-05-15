@@ -1,0 +1,11 @@
+version: '3'
+services:
+  atproto:
+    container_name: atproto
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 2582:2582
+      - 2583:2583
+    tty: true
